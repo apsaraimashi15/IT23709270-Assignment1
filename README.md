@@ -97,21 +97,17 @@ All files renamed with IT23709270
 
 Submitted before February 1st
 
-✅ Submission Checklist
-24 Positive test scenarios automated
+Tools & Technologies//
 
-10 Negative test scenarios automated
+Node.js (v18+ recommended)
+Playwright (end-to-end testing framework)
+TypeScript (for test development)
+JavaScript (for scripting and tests)
+XLSX (Excel file generation for test documentation)
+@types/node (TypeScript type definitions for Node.js)
+HTML Reporter (Playwright built-in)
+Modern browsers (Chromium, via Playwright)
 
-4 UI test scenarios automated
 
-Excel file completed
 
-GitHub repository created
 
-All files renamed correctly
-
-Project zipped for submission
-
-Student ID: IT23709270
-Course: IT3040 - ITPM
-Semester: 1

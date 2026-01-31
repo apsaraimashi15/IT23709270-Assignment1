@@ -1,0 +1,2030 @@
+{
+  "config": {
+    "configFile": "/Users/ruvi/Desktop/Projects/Youtube video/playwright.config.js",
+    "rootDir": "/Users/ruvi/Desktop/Projects/Youtube video",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/ruvi/Desktop/Projects/Youtube video",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.js"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "test-results/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/test-results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "swift-translator-tests.spec.js",
+      "file": "swift-translator-tests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SwiftTranslator - Singlish to Sinhala Conversion Tests",
+          "file": "swift-translator-tests.spec.js",
+          "line": 437,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Positive Functional Tests",
+              "file": "swift-translator-tests.spec.js",
+              "line": 446,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Pos_Fun_001 - Simple present tense statement",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 14059,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:52:38.268Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-48cdc35ae6b362c85146",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_002 - Simple food request",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 9566,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට කිරි ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට කිරි ඕන\u001b[7mේ\u001b[27m\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට කිරි ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට කිරි ඕන\u001b[7mේ\u001b[27m\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට කිරි ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට කිරි ඕන\u001b[7mේ\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:52:52.951Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-51912-n-002---Simple-food-request-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-51912-n-002---Simple-food-request-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-51912-n-002---Simple-food-request-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-f5fe4b8bfc8f87026867",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_003 - Going home statement",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12745,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:53:03.232Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-f033d71cf2d51562b00f",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_004 - Two activities connected",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 9696,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම කෑම කන්නම් සහ පස්ස\u001b[7mේ\u001b[27m නාගින්නම්\"\u001b[39m\nReceived: \u001b[31m\"මම කෑම කන්නම් සහ පස්ස\u001b[7mෙ\u001b[27m නාගින්නම්\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම කෑම කන්නම් සහ පස්ස\u001b[7mේ\u001b[27m නාගින්නම්\"\u001b[39m\nReceived: \u001b[31m\"මම කෑම කන්නම් සහ පස්ස\u001b[7mෙ\u001b[27m නාගින්නම්\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම කෑම කන්නම් සහ පස්ස\u001b[7mේ\u001b[27m නාගින්නම්\"\u001b[39m\nReceived: \u001b[31m\"මම කෑම කන්නම් සහ පස්ස\u001b[7mෙ\u001b[27m නාගින්නම්\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:53:16.500Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-7aa0b----Two-activities-connected-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-7aa0b----Two-activities-connected-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-7aa0b----Two-activities-connected-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-31fbe78355e7e50dcc84",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_005 - Weather condition compound",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 14079,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:53:26.830Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-0d5d37b2b874e0bbd12d",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_006 - Conditional complex sentence",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 13195,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:53:41.203Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-800305376fc0737fe911",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_007 - Simple question about state",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11552,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:53:54.407Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-f144b0a9269f29ff1697",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_008 - Question about time",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 9622,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"කව\u001b[7mද\u001b[27m්ද එන්න යන්න\u001b[7mේ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"කව\u001b[7mඩ\u001b[27m්ද එන්න යන්න\u001b[7mෙ\u001b[27m\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"කව\u001b[7mද\u001b[27m්ද එන්න යන්න\u001b[7mේ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"කව\u001b[7mඩ\u001b[27m්ද එන්න යන්න\u001b[7mෙ\u001b[27m\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"කව\u001b[7mද\u001b[27m්ද එන්න යන්න\u001b[7mේ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"කව\u001b[7mඩ\u001b[27m්ද එන්න යන්න\u001b[7mෙ\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:54:05.975Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-8d3d6-n-008---Question-about-time-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-8d3d6-n-008---Question-about-time-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-8d3d6-n-008---Question-about-time-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-ce66ac4795f287d24536",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_009 - Polite question request",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12776,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:54:16.252Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-6e01e369f8eea0277e25",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_010 - Direct command",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 10534,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ල\u001b[7mඟ\u001b[27m එන්න\"\u001b[39m\nReceived: \u001b[31m\"ල\u001b[7mඹ\u001b[27m එන්න\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ල\u001b[7mඟ\u001b[27m එන්න\"\u001b[39m\nReceived: \u001b[31m\"ල\u001b[7mඹ\u001b[27m එන්න\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ල\u001b[7mඟ\u001b[27m එන්න\"\u001b[39m\nReceived: \u001b[31m\"ල\u001b[7mඹ\u001b[27m එන්න\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:54:29.533Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-ba270-os-Fun-010---Direct-command-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-ba270-os-Fun-010---Direct-command-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-ba270-os-Fun-010---Direct-command-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-2900d384c11d41ffb2b4",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_011 - Polite command",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 13393,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:54:40.786Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-116a7a7a3ee71fa0750e",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_012 - Morning greeting",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11841,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:54:54.699Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-f41c4a001759b66bc19a",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_013 - Affirmative response",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 9771,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ඔව් \u001b[7mhari\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"ඔව් \u001b[7mහරි\u001b[27m\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ඔව් \u001b[7mhari\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"ඔව් \u001b[7mහරි\u001b[27m\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ඔව් \u001b[7mhari\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"ඔව් \u001b[7mහරි\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:55:06.548Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-487a3--013---Affirmative-response-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-487a3--013---Affirmative-response-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-487a3--013---Affirmative-response-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-d4f11fff75ee5d0d06d6",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_014 - Past tense action",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12923,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:55:16.985Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-3e80de183d211b79d029",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_015 - Future tense plan",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 10282,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අපි හෙට කොල\u001b[7mඹ\u001b[27mට යමු\"\u001b[39m\nReceived: \u001b[31m\"අපි හෙට කොල\u001b[7mම්බ\u001b[27mට යමු\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අපි හෙට කොල\u001b[7mඹ\u001b[27mට යමු\"\u001b[39m\nReceived: \u001b[31m\"අපි හෙට කොල\u001b[7mම්බ\u001b[27mට යමු\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අපි හෙට කොල\u001b[7mඹ\u001b[27mට යමු\"\u001b[39m\nReceived: \u001b[31m\"අපි හෙට කොල\u001b[7mම්බ\u001b[27mට යමු\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:55:30.402Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-fc131-Fun-015---Future-tense-plan-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-fc131-Fun-015---Future-tense-plan-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-fc131-Fun-015---Future-tense-plan-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-87b0017433e8595c0abd",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_016 - Simple negation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 13500,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:55:41.340Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-a7078d5d53d25e867cbe",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_017 - Cannot statement",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12272,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:55:55.352Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-b8f2bef08197cb7e76cc",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_018 - Plural pronoun usage",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12466,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:56:07.634Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-d2cb3d8bb104f8467d5a",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_019 - Common phrase pattern",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 16890,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:56:20.109Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-6910d26f68fd88f2b961",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_020 - English brand term embedded",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12004,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:56:37.008Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-a13df57a21229c4918cc",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_021 - Place name preservation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 13999,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:56:49.020Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-6d65f49481a3532dfa1c",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_022 - Exclamation mark handling",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 13151,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:57:03.029Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-c4d714fb1943261554af",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_023 - Currency amount",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 12981,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට Rs. 500ක් ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට Rs. 500ක් ඕන\u001b[7mේ\u001b[27m\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට Rs. 500ක් ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට Rs. 500ක් ඕන\u001b[7mේ\u001b[27m\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට Rs. 500ක් ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට Rs. 500ක් ඕන\u001b[7mේ\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:57:16.188Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-4cb29-s-Fun-023---Currency-amount-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-4cb29-s-Fun-023---Currency-amount-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-4cb29-s-Fun-023---Currency-amount-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-f2eb1a64b5efd9392a88",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                },
+                {
+                  "title": "Pos_Fun_024 - Medium length conversation",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 25406,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම හෙට office යනවා ඒහින්ද මට අද රෑ කන්න බෑ. ඔයා මට රෑ එක \u001b[7mසවන්න\u001b[27m පුලුවන්ද\"\u001b[39m\nReceived: \u001b[31m\"මම හෙට office යනවා ඒහින්ද මට අද රෑ කන්න බෑ. ඔයා මට රෑ එක \u001b[7msavanna\u001b[27m පුලුවන්ද\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම හෙට office යනවා ඒහින්ද මට අද රෑ කන්න බෑ. ඔයා මට රෑ එක \u001b[7mසවන්න\u001b[27m පුලුවන්ද\"\u001b[39m\nReceived: \u001b[31m\"මම හෙට office යනවා ඒහින්ද මට අද රෑ කන්න බෑ. ඔයා මට රෑ එක \u001b[7msavanna\u001b[27m පුලුවන්ද\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 450
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 450
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම හෙට office යනවා ඒහින්ද මට අද රෑ කන්න බෑ. ඔයා මට රෑ එක \u001b[7mසවන්න\u001b[27m පුලුවන්ද\"\u001b[39m\nReceived: \u001b[31m\"මම හෙට office යනවා ඒහින්ද මට අද රෑ කන්න බෑ. ඔයා මට රෑ එක \u001b[7msavanna\u001b[27m පුලුවන්ද\"\u001b[39m\n\n\u001b[0m \u001b[90m 448 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 449 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 450 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 452 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 453 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:450:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:57:29.956Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-d09aa--Medium-length-conversation-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-d09aa--Medium-length-conversation-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-d09aa--Medium-length-conversation-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 450
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-19b798edca142123a9ea",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 448,
+                  "column": 7
+                }
+              ]
+            },
+            {
+              "title": "Negative Functional Tests",
+              "file": "swift-translator-tests.spec.js",
+              "line": 457,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Neg_Fun_001 - Missing space between words",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11743,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම\u001b[7m \u001b[27mගෙදර\u001b[7m ඉ\u001b[27mන්නේ\"\u001b[39m\nReceived: \u001b[31m\"මමගෙදර\u001b[7mෛ\u001b[27mන්නේ\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම\u001b[7m \u001b[27mගෙදර\u001b[7m ඉ\u001b[27mන්නේ\"\u001b[39m\nReceived: \u001b[31m\"මමගෙදර\u001b[7mෛ\u001b[27mන්නේ\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම\u001b[7m \u001b[27mගෙදර\u001b[7m ඉ\u001b[27mන්නේ\"\u001b[39m\nReceived: \u001b[31m\"මමගෙදර\u001b[7mෛ\u001b[27mන්නේ\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:57:56.700Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-a013b-Missing-space-between-words-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-a013b-Missing-space-between-words-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-a013b-Missing-space-between-words-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-de1b07838fb68368b025",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_002 - Joined compound words",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 10998,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අපි\u001b[7m \u001b[27mපස්ස\u001b[7mේ කතා \u001b[27mකරමු\"\u001b[39m\nReceived: \u001b[31m\"අපිපස්ස\u001b[7mෙකත\u001b[27mකරමු\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අපි\u001b[7m \u001b[27mපස්ස\u001b[7mේ කතා \u001b[27mකරමු\"\u001b[39m\nReceived: \u001b[31m\"අපිපස්ස\u001b[7mෙකත\u001b[27mකරමු\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අපි\u001b[7m \u001b[27mපස්ස\u001b[7mේ කතා \u001b[27mකරමු\"\u001b[39m\nReceived: \u001b[31m\"අපිපස්ස\u001b[7mෙකත\u001b[27mකරමු\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:58:09.637Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-f1f82-002---Joined-compound-words-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-f1f82-002---Joined-compound-words-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-f1f82-002---Joined-compound-words-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-1e473d632093f929f5c9",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_003 - Mixed spacing issues",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 10983,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට \u001b[7mඕනෑ\u001b[27m ඒක\"\u001b[39m\nReceived: \u001b[31m\"මට \u001b[7m    ඕනේ \u001b[27m ඒක\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට \u001b[7mඕනෑ\u001b[27m ඒක\"\u001b[39m\nReceived: \u001b[31m\"මට \u001b[7m    ඕනේ \u001b[27m ඒක\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට \u001b[7mඕනෑ\u001b[27m ඒක\"\u001b[39m\nReceived: \u001b[31m\"මට \u001b[7m    ඕනේ \u001b[27m ඒක\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:58:21.836Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-4af28--003---Mixed-spacing-issues-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-4af28--003---Mixed-spacing-issues-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-4af28--003---Mixed-spacing-issues-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-77407f20cf479505f952",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_004 - Line break in sentence",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 10754,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- මම \u001b[7mයනවම්\u001b[27m\u001b[39m\n\u001b[32m- ගෙදර\u001b[39m\n\u001b[31m+ මම \u001b[7mගෙදර යනවා කමල්ටත් කියන්න\u001b[27m\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- මම \u001b[7mයනවම්\u001b[27m\u001b[39m\n\u001b[32m- ගෙදර\u001b[39m\n\u001b[31m+ මම \u001b[7mගෙදර යනවා කමල්ටත් කියන්න\u001b[27m\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- මම \u001b[7mයනවම්\u001b[27m\u001b[39m\n\u001b[32m- ගෙදර\u001b[39m\n\u001b[31m+ මම \u001b[7mගෙදර යනවා කමල්ටත් කියන්න\u001b[27m\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:58:34.003Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-14c92-04---Line-break-in-sentence-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-14c92-04---Line-break-in-sentence-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-14c92-04---Line-break-in-sentence-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-3cf135018486584752f6",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_005 - Informal slang phrase",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 13771,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:58:46.004Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-bdbc187ddd6855a9c928",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_006 - Colloquial expression",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 9830,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අඩෝ\u001b[7mඕ\u001b[27m මොකක්ක්ද මේ\"\u001b[39m\nReceived: \u001b[31m\"අඩෝ\u001b[7mඔ\u001b[27m මොකක්ක්ද මේ\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අඩෝ\u001b[7mඕ\u001b[27m මොකක්ක්ද මේ\"\u001b[39m\nReceived: \u001b[31m\"අඩෝ\u001b[7mඔ\u001b[27m මොකක්ක්ද මේ\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"අඩෝ\u001b[7mඕ\u001b[27m මොකක්ක්ද මේ\"\u001b[39m\nReceived: \u001b[31m\"අඩෝ\u001b[7mඔ\u001b[27m මොකක්ක්ද මේ\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:58:59.978Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-adbf1-006---Colloquial-expression-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-adbf1-006---Colloquial-expression-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-adbf1-006---Colloquial-expression-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-05e90e6d331286b681d7",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_007 - Mixed English with errors",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11642,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම\u001b[7m WhatsApp එ\u001b[27mකගියා\"\u001b[39m\nReceived: \u001b[31m\"මම\u001b[7mWහට්සප්පෙ\u001b[27mකගියා\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම\u001b[7m WhatsApp එ\u001b[27mකගියා\"\u001b[39m\nReceived: \u001b[31m\"මම\u001b[7mWහට්සප්පෙ\u001b[27mකගියා\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මම\u001b[7m WhatsApp එ\u001b[27mකගියා\"\u001b[39m\nReceived: \u001b[31m\"මම\u001b[7mWහට්සප්පෙ\u001b[27mකගියා\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:59:10.542Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-69df4---Mixed-English-with-errors-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-69df4---Mixed-English-with-errors-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-69df4---Mixed-English-with-errors-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-0df1038f7bb54813e747",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_008 - Abbreviation in sentence",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11211,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට ASAP ඒක ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට ASAP ඒක ඕන\u001b[7mේ\u001b[27m\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට ASAP ඒක ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට ASAP ඒක ඕන\u001b[7mේ\u001b[27m\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"මට ASAP ඒක ඕන\u001b[7mෑ\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"මට ASAP ඒක ඕන\u001b[7mේ\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:59:23.152Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-cd8c9----Abbreviation-in-sentence-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-cd8c9----Abbreviation-in-sentence-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-cd8c9----Abbreviation-in-sentence-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-20f79c92fb6a80541ae4",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_009 - Question with spacing error",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11107,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ඔයා\u001b[7m \u001b[27mකොහෙද\u001b[7m ඉ\u001b[27mන්නේ\"\u001b[39m\nReceived: \u001b[31m\"ඔයාකොහෙද\u001b[7mෛ\u001b[27mන්නේ\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ඔයා\u001b[7m \u001b[27mකොහෙද\u001b[7m ඉ\u001b[27mන්නේ\"\u001b[39m\nReceived: \u001b[31m\"ඔයාකොහෙද\u001b[7mෛ\u001b[27mන්නේ\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"ඔයා\u001b[7m \u001b[27mකොහෙද\u001b[7m ඉ\u001b[27mන්නේ\"\u001b[39m\nReceived: \u001b[31m\"ඔයාකොහෙද\u001b[7mෛ\u001b[27mන්නේ\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:59:35.568Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-84eb9-Question-with-spacing-error-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-84eb9-Question-with-spacing-error-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-84eb9-Question-with-spacing-error-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-50a82a63fa3e4c0c452f",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                },
+                {
+                  "title": "Neg_Fun_010 - Complex slang statement",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11621,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"එයි bro ඒක \u001b[7mset\u001b[27m කරල \u001b[7mද\u001b[27mෙන්න\"\u001b[39m\nReceived: \u001b[31m\"එයි bro ඒක \u001b[7mසෙට්\u001b[27m කරල \u001b[7mඩ\u001b[27mෙන්න\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"එයි bro ඒක \u001b[7mset\u001b[27m කරල \u001b[7mද\u001b[27mෙන්න\"\u001b[39m\nReceived: \u001b[31m\"එයි bro ඒක \u001b[7mසෙට්\u001b[27m කරල \u001b[7mඩ\u001b[27mෙන්න\"\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 30,
+                              "line": 461
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 30,
+                                "line": 461
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"එයි bro ඒක \u001b[7mset\u001b[27m කරල \u001b[7mද\u001b[27mෙන්න\"\u001b[39m\nReceived: \u001b[31m\"එයි bro ඒක \u001b[7mසෙට්\u001b[27m කරල \u001b[7mඩ\u001b[27mෙන්න\"\u001b[39m\n\n\u001b[0m \u001b[90m 459 |\u001b[39m       test(\u001b[32m`${testCase.tcId} - ${testCase.name}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 460 |\u001b[39m         \u001b[36mconst\u001b[39m actualOutput \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mperformTranslation(testCase\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 461 |\u001b[39m         expect(actualOutput)\u001b[33m.\u001b[39mtoBe(testCase\u001b[33m.\u001b[39mexpected)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 462 |\u001b[39m         \u001b[36mawait\u001b[39m translator\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[33mCONFIG\u001b[39m\u001b[33m.\u001b[39mtimeouts\u001b[33m.\u001b[39mbetweenTests)\u001b[33m;\u001b[39m\n \u001b[90m 463 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 464 |\u001b[39m     }\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:461:30\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T07:59:47.658Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-7237d-0---Complex-slang-statement-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-7237d-0---Complex-slang-statement-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-7237d-0---Complex-slang-statement-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 30,
+                            "line": 461
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-35c9bf604fdb91fac031",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 459,
+                  "column": 7
+                }
+              ]
+            },
+            {
+              "title": "UI Functionality Tests",
+              "file": "swift-translator-tests.spec.js",
+              "line": 468,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Pos_UI_001 - Real-time translation updates as typing",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11578,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:484:40",
+                            "location": {
+                              "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                              "column": 40,
+                              "line": 484
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 482 |\u001b[39m       \u001b[90m// Verify partial translation appears\u001b[39m\n \u001b[90m 483 |\u001b[39m       \u001b[36mlet\u001b[39m outputText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m output\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 484 |\u001b[39m       expect(outputText\u001b[33m.\u001b[39mtrim()\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 485 |\u001b[39m       \n \u001b[90m 486 |\u001b[39m       \u001b[90m// Complete typing\u001b[39m\n \u001b[90m 487 |\u001b[39m       \u001b[36mawait\u001b[39m input\u001b[33m.\u001b[39mpressSequentially(\u001b[33mTEST_DATA\u001b[39m\u001b[33m.\u001b[39mui\u001b[33m.\u001b[39minput\u001b[33m.\u001b[39msubstring(\u001b[33mTEST_DATA\u001b[39m\u001b[33m.\u001b[39mui\u001b[33m.\u001b[39mpartialInput\u001b[33m.\u001b[39mlength)\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m150\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                                "column": 40,
+                                "line": 484
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 482 |\u001b[39m       \u001b[90m// Verify partial translation appears\u001b[39m\n \u001b[90m 483 |\u001b[39m       \u001b[36mlet\u001b[39m outputText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m output\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 484 |\u001b[39m       expect(outputText\u001b[33m.\u001b[39mtrim()\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 485 |\u001b[39m       \n \u001b[90m 486 |\u001b[39m       \u001b[90m// Complete typing\u001b[39m\n \u001b[90m 487 |\u001b[39m       \u001b[36mawait\u001b[39m input\u001b[33m.\u001b[39mpressSequentially(\u001b[33mTEST_DATA\u001b[39m\u001b[33m.\u001b[39mui\u001b[33m.\u001b[39minput\u001b[33m.\u001b[39msubstring(\u001b[33mTEST_DATA\u001b[39m\u001b[33m.\u001b[39mui\u001b[33m.\u001b[39mpartialInput\u001b[33m.\u001b[39mlength)\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m150\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js:484:40\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-30T08:00:00.448Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-3afef-anslation-updates-as-typing-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-3afef-anslation-updates-as-typing-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/ruvi/Desktop/Projects/Youtube video/test-results/artifacts/swift-translator-tests-Swi-3afef-anslation-updates-as-typing-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/ruvi/Desktop/Projects/Youtube video/swift-translator-tests.spec.js",
+                            "column": 40,
+                            "line": 484
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eadbbf75cb5c0f7a6a3d-2fe9f662a9401138fe5c",
+                  "file": "swift-translator-tests.spec.js",
+                  "line": 469,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-30T07:52:37.818Z",
+    "duration": 454994.533,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 18,
+    "flaky": 0
+  }
+}
